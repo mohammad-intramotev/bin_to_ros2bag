@@ -2,16 +2,7 @@
 
 ## Setup
 1. Place .bin file(s) into `bin_logs/`.
-2. If needed, combine multiple `.bin` into one. For example:
-   ```bash
-   cat log_20250409_172141_190_0849.bin 
-   log_20250409_172141_190_0850.bin
-   log_20250409_172141_190_0851.bin
-   log_20250409_172141_190_0852.bin 
-   log_20250409_172141_190_0853.bin 
-   log_20250409_172141_190_0854.bin 
-   log_20250409_172141_190_0855.bin > combined_log.bin
-   ```
+2. If needed, use [`combine_bin.py`](./combine_bin.py) to merge multiple .bin files into a single file.
 3. Application is Dockerized. To build and run the converter:
    ```
    sudo docker compose up --build

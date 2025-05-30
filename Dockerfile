@@ -16,8 +16,8 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 
 # Copy project files into the container
 COPY bin_to_ros2bag.py .
-COPY livox_pb2.py .
-COPY orientation_pb2.py .
+COPY common/livox_pb2.py .
+COPY common/orientation_pb2.py .
 
 # Default command
 CMD ["python3", "bin_to_ros2bag.py", "/root/bin_logs", "/root/bintobag/build/ros2_bags_output"]

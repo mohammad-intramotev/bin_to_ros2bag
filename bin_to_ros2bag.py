@@ -17,7 +17,7 @@ import shutil
 
 try:
     import livox_pb2
-    import orientation_pb2 
+    import orientation_pb2
 except ImportError as e:
     print(f"Error: Could not import protobuf modules. Make sure livox_pb2.py and orientation_pb2.py are accessible.")
     print(f"Details: {e}")
